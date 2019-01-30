@@ -50,7 +50,30 @@ public class Assignment1{
   
   public int[][] readMatrix(String filename, int n) throws Exception
   {
-    return null;
+
+    int[][] arr = new int[n][n];
+    int i = 0;
+
+    try
+    {
+      String row;
+      BufferedReader buf = new BufferedReader(new FileReader(filename));
+      while((row = buf.readLine()) != null)
+      {
+        String [] values = row.split(" ");
+        for(int j = 0; j < n; j++)
+        {
+          arr[i][j] = Integer.parseInt(values[j]);
+        }
+        i++;
+      }
+      buf.close();
+    } catch(Exception e) {
+      System.out.println("Exception occured: " + e);
+    }
+    return arr;
   }
-  
+
+
+
 }
