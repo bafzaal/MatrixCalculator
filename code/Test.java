@@ -4,7 +4,7 @@ public class Test{
   {
     int testPart = Integer.parseInt(args[0]);
     
-    Assignment1 a1 = new Assignment1();
+    MatrixCalculator a1 = new MatrixCalculator();
     int n = 8;
     int[][] matrix;
     

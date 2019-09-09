@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Assignment1{
+public class MatrixCalculator{
  
  
   public int[][] denseMatrixMult(int[][] A, int[][] B, int size)
